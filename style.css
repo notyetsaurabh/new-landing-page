@@ -5,22 +5,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  
+    font-weight: 300;
 }
 
 body {
-    font-family: Arial, sans-serif;
+   
     margin: 0;
     padding: 0;
     color: #ffffff;
     background-color: #010101; /* Set background color to black */
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 header{
     z-index: 999;
     position: absolute;
     top: 0;
+    height: 70px;
+    font-family: "Poppins", sans-serif;
     left: 0;
     width: 100%;
     display: flex;
@@ -28,14 +30,17 @@ header{
     align-items: center;
     padding: 15px 200px;
     transition: 0.5s ease;
-    
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
 }
 
 header .brand{
     color: #fff;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
+    text-align: left;
     text-decoration: none;
 }
 
@@ -50,7 +55,7 @@ header .navigation{
 header .navigation .navigation-items a{
     position: relative;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
@@ -78,8 +83,10 @@ section{
 }
 
 .home {
+    font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
+    
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -91,7 +98,7 @@ section{
     z-index: 777;
     content: '';
     position: absolute;
-    background: rgba(251, 3, 3, 0.034);
+    background: rgba(125, 0, 0, 0.034);
     width: 100%;
     height: 100%;
     top: 0;
@@ -111,8 +118,8 @@ section{
 }
 
 .home .content h1{
-    font-size: 4em;
-    font-weight: 900;
+    font-size: 3em;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 75px;
@@ -120,7 +127,7 @@ section{
 }
 
 .home .content h1 span{
-    font-size: 1.2em;
+    font-size: 1.9em;
     font-weight: 600;
 }
 
@@ -178,6 +185,7 @@ section{
 }
 
 .slider-navigation{
+    font-family: "Poppins", sans-serif;
     z-index: 888;
     position: relative;
     display: flex;
@@ -292,14 +300,9 @@ section{
     }
 }
 
-
-
-
-
 /*3d image up to down */
-
-
 #main {
+    font-family: "Poppins", sans-serif;
     gap: 1vh;
     align-items: center;
     justify-content: center;
@@ -310,6 +313,7 @@ section{
 }
 
 .cards {
+    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -337,6 +341,7 @@ section{
 }
 
 .text{
+    font-family: "Poppins", sans-serif;
     position: absolute;
     width: 100%;
     top: 25%;
@@ -370,59 +375,71 @@ section{
 
 /*benchmark numbers*/
 .metrics-container {
+    font-family: "Poppins", sans-serif;
     display: flex;
+    font-weight: 300;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;
-    background-color: #f7f8fc; /* Light gray background */
+    background-color: #fafafa; /* Light gray background */
     text-align: center;
 }
 
 .metrics-title {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #222; /* Dark text color */
+    font-weight: 600;
+    color: #111; /* Dark text color */
     margin-bottom: 20px;
 }
 
 .metrics-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555; /* Medium gray for subtitle */
     margin-bottom: 40px;
     max-width: 800px;
+    text-align: center;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 .metrics-stats {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     flex-wrap: wrap;
 }
 
 .metrics-stat-item {
     display: flex;
+    min-height: 140px;
+    min-width: 190px;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 5px 12px 15px rgba(0, 0, 0, 0.2), inset 5px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
 .metrics-stat-number {
     font-size: 3rem;
-    font-weight: bold;
-    color: #0057b7; /* Blue color for numbers */
+    font-weight: 700;
+    color: #028fbe; /* Blue color for numbers */
 }
 
 .metrics-stat-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
+    font-weight: 300;
     margin-top: 10px;
 }
 
 .metrics-link {
     font-size: 1rem;
-    color: #0057b7; /* Blue color for link */
+    color: #028fbe; /* Blue color for link */
     text-decoration: none;
     font-weight: bold;
 }
@@ -437,34 +454,51 @@ section{
 
 
 .footer-wrapper {
-    padding: 40px 20px;
-    background-color: #000; /* Ensure footer background is black */
-    color: #fff;
+    padding: 25px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    min-height: 400px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0); /* Ensure footer background is black */
+    color: white;
     border-top: 1px solid #444;
    
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    margin: 10px;
+    justify-content: space-around;
     flex-wrap: wrap;
     overflow-x: hidden;
+    flex-shrink: 0;
+    align-items: flex-start;
+
 }
 
 .footer-column {
     flex: 1;
+    margin-bottom: 10px;
     min-width: 200px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+    
 }
 
 .footer-title {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-bottom: 10px;
     color: #fff;
 }
 
 .footer-text, .footer-link {
-    font-size: 0.9em;
+    font-size: 0.8rem;
     color: #ccc;
     text-decoration: none;
     margin-bottom: 8px;
@@ -525,8 +559,10 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 40px;
-    font-size: 0.9em;
+    margin-top: 20px;
+    padding: 4px;
+    padding-top: 10px;
+    font-size: 0.9rem;
 }
 
 .certification-item {
@@ -585,7 +621,7 @@ section{
     top: 55px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Poppins', sans-serif;
+    
     font-size: 28px;
     white-space: nowrap;
     color: #fff;
