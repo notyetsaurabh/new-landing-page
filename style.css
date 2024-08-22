@@ -9,7 +9,6 @@
 }
 
 body {
-   
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -55,11 +54,13 @@ header .navigation{
 header .navigation .navigation-items a{
     position: relative;
     color: #fff;
+    top:50%;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
+ 
 }
 
 header .navigation .navigation-items a:before{
@@ -197,6 +198,7 @@ section{
 
 .slider-navigation .nav-btn{
     width: 12px;
+ 
     height: 12px;
     background: #fff;
     border-radius: 50%;
@@ -283,6 +285,7 @@ section{
         height: 40px;
         cursor: pointer;
         transition: 0.3s ease;
+        z-index: 10;
     }
     .menu-btn.active{
         z-index: 999;
@@ -308,7 +311,7 @@ section{
     justify-content: center;
     width: 100%;
     min-height: 150vh;
-    background-color: #202020;
+    background-color: rgb(0, 25, 41);
     overflow-y: hidden;
 }
 
@@ -322,7 +325,8 @@ section{
     height: 80vh;
     background-position: center;
     background-size: cover;
-  
+    border: 2px solid rgba(3, 52, 52, 0.5);
+    border-radius: 15px;
 }
 
 #card-one {
@@ -395,9 +399,10 @@ section{
 
 .metrics-subtitle {
     font-size: 1.1rem;
-    color: #555; /* Medium gray for subtitle */
+    color: #111; /* Medium gray for subtitle */
     margin-bottom: 40px;
-    max-width: 800px;
+   
+    text-wrap: wrap;
     text-align: center;
     line-height: 1.6;
     font-weight: 300;
@@ -426,7 +431,7 @@ section{
 
 .metrics-stat-number {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #028fbe; /* Blue color for numbers */
 }
 
@@ -438,10 +443,10 @@ section{
 }
 
 .metrics-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #028fbe; /* Blue color for link */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .metrics-link:hover {
@@ -461,8 +466,8 @@ section{
     overflow-y: auto;
     background-color: rgba(0, 0, 0); /* Ensure footer background is black */
     color: white;
-    border-top: 1px solid #444;
-   
+    border-top: 2px solid #393939;
+ 
 }
 
 .footer-container {
@@ -473,7 +478,7 @@ section{
     overflow-x: hidden;
     flex-shrink: 0;
     align-items: flex-start;
-
+    
 }
 
 .footer-column {
@@ -506,6 +511,7 @@ section{
 
 .footer-link:hover {
     text-decoration: underline;
+    color: #09a6d4;
 }
 
 .footer-form {
@@ -581,7 +587,7 @@ section{
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .footer-column {
@@ -733,12 +739,114 @@ section{
 
 } 
    
+/*     testimonials       */
+.testimonials-section {
+    position: relative;
+    min-width: screen;
+    padding: 3rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    background-color: rgb(0, 9, 14);
+    
+}
+ 
 
-/*** 3d image swiper***/
 
+.heading-container {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+}
 
+.heading {
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
 
+  .paragraph-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+ 
+    text-wrap: wrap;
+  }
 
+.paragraph {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #bbb;
+    text-align: center;
+}
 
+.feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+  
+}
 
+.feedback-card {
+    background-color: #00171b;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 370px;
+    margin: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(0, 189, 189, 0.62);
+    box-shadow: 5px 10px 15px rgba(0, 143, 179, 0.4);
+}
 
+.feedback-card img.quote-icon {
+    width: 42.6px;
+    height: 27.6px;
+    object-fit: contain;
+}
+
+.feedback-card p.content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 2.5rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback-card .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-card .user-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.feedback-card .user-info .user-details {
+    margin-left: 1rem;
+}
+
+.feedback-card .user-info .user-details h4 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.feedback-card .user-info .user-details p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.quotes{
+    z-index: 5;
+}

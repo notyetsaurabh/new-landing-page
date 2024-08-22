@@ -106,9 +106,48 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-
+ 
 
 // Testimonials carousel
+const feedback = [
+    {
+        id: "feedback-1",
+        content: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+        name: "Herman Jensen",
+        title: "Founder & Leader",
+        img: "./image/people01.png",
+    },
+    {
+        id: "feedback-2",
+        content: "Money makes your life easier. If you're lucky to have it, you're lucky.",
+        name: "Steve Mark",
+        title: "Founder & Leader",
+        img: "./image/people02.png",
+    },
+    {
+        id: "feedback-3",
+        content: "It is usually people in the money business, finance, and international trade that are really rich.",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "./image/people03.png",
+    },
+];
 
+const feedbackContainer = document.getElementById("feedback-container");
 
-        
+feedback.forEach(({ content, name, title, img }) => {
+    const cardHTML = `
+        <div class="feedback-card">
+            <img class="qoutes" src="./image/quotes.svg" alt="double_quotes" class="quote-icon" />
+            <p class="content">${content}</p>
+            <div class="user-info">
+                <img src="${img}" alt="${name}" />
+                <div class="user-details">
+                    <h4>${name}</h4>
+                    <p>${title}</p>
+                </div>
+            </div>
+        </div>
+    `;
+    feedbackContainer.insertAdjacentHTML("beforeend", cardHTML);
+});

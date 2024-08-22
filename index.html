@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,121 +9,134 @@
     <link rel="icon" type="image/x-icon" href="image/OXFORD ICON.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.swiper {
-  width: 68%;
-  padding-top: 150px;
-  padding-bottom: 90px;
-  background-color: #050505;
-  border-radius: 50px;
-  position: relative;
-  
-}
-.swiper .title{
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    font-size: 28px;
-    white-space: nowrap;
-    color: #fff;
-    font-weight: 400;
-}
-.title span{
-    font-weight: bold;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-.swiper-slide{
-    width: 450px;
-    height: 450px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-}
-.swiper-slide .icon
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide .icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    transition: transform 0.5s ease-in-out;
-    z-index: 1;
-}
-.swiper-slide .icon i{
-    font-size: 200px;
-    opacity: 0.7;
-}
+        .swiper {
+            width: 68%;
+            padding-top: 150px;
+            padding-bottom: 90px;
+            background-color: #050505;
+            border-radius: 50px;
+            position: relative;
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after{
-    display: none;
-}
-.swiper-button-next i,
-.swiper-button-prev i{
-    font-size: 35px;
-    color: #fff;
-}
-.swiper-button-next{
-    margin-right: 15px;
-}
-.swiper-button-prev{
-    margin-left: 15px;
-}
+        }
 
-/* Responsive */
-@media screen and (max-width: 950px) {
-    .swiper{
-        width: 90%;
-    }
-}
+        .swiper .title {
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            transform: translateX(-50%);
 
-@media screen and (max-width: 700px) {
-    .swiper-slide{
-        width: 300px;
-        height: 250px;
-    }
+            font-size: 28px;
+            white-space: nowrap;
+            color: #fff;
+            font-weight: 400;
+        }
 
-    .swiper .title{
-        font-size: 20px;
-        white-space: inherit;
-        width: 100%;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 400px) {
-    
-    .swiper-button-next i,
-    .swiper-button-prev i{
-        color: #242425;
-    }
+        .title span {
+            font-weight: bold;
+        }
 
-}
-    </style>   
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            width: 450px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border:4px solid rgb(62, 62, 62);
+         }
+
+        .swiper-slide .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            transition: transform 0.5s ease-in-out;
+            z-index: 1;
+        }
+
+        .swiper-slide .icon i {
+            font-size: 200px;
+            opacity: 0.7;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        .swiper-button-next i,
+        .swiper-button-prev i {
+            font-size: 35px;
+            color: #fff;
+        }
+
+        .swiper-button-next {
+            margin-right: 15px;
+        }
+
+        .swiper-button-prev {
+            margin-left: 15px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 950px) {
+            .swiper {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .swiper-slide {
+                width: 300px;
+                height: 250px;
+            }
+
+            .swiper .title {
+                font-size: 20px;
+                white-space: inherit;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+
+            .swiper-button-next i,
+            .swiper-button-prev i {
+                color: #242425;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <header id="header">
         <a href="#" class="brand">Space</a>
@@ -140,41 +154,65 @@
     </header>
 
     <section class="home">
-        <img decoding="async" class="img-slide active" src="image/1.jpg" ></img>
-        <img decoding="async" class="img-slide" src="image/2.jpg" ></img>
-        <img decoding="async" class="img-slide" src="image/3.jpg" ></img>
-        <img decoding="async" class="img-slide" src="image/4.jpg" ></img>
-        <img decoding="async" class="img-slide" src="image/5jpg" ></img>
-        <!--<div class="content active">
+
+
+        <img decoding="async" class="img-slide active" src="image/banner1.jpeg"></img>
+        <img decoding="async" class="img-slide" src="image/banner2.jpeg"></img>
+        <img decoding="async" class="img-slide" src="image/banner3.jpeg"></img>
+        <img decoding="async" class="img-slide" src="image/banner4.jpeg"></img>
+        <img decoding="async" class="img-slide" src="image/banner5.jpeg"></img>
+       <!--
+        <div class="content active">
             <h1>USSF-44.<br><span>Mission</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="test.html">Read More</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web
+                design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="test.html">Read More</a>
         </div>
         <div class="content">
-          <h1>STARSHIP UPDATE.<br><span>Rocket</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Read More</a>
+            <h1>STARSHIP UPDATE.<br><span>Rocket</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web
+                design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
         </div>
         <div class="content">
-          <h1>INTELSAT.<br><span>G-31MISSION</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Read More</a>
+            <h1>INTELSAT.<br><span>G-31MISSION</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web
+                design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
         </div>
         <div class="content">
-          <h1>NASA ASTRONAUTS.<br><span>THE MOON</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Read More</a>
+            <h1>NASA ASTRONAUTS.<br><span>THE MOON</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web
+                design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
         </div>
         <div class="content">
-          <h1>Space Travel.<br><span>Rocket</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Read More</a>
-        </div> -->
+            <h1>Space Travel.<br><span>Rocket</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna anime. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut farhan ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum daily web
+                design nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
+        </div>
+        -->
         <div class="media-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-          
+
         </div>
         <div class="slider-navigation">
             <div class="nav-btn active"></div>
@@ -184,128 +222,146 @@
             <div class="nav-btn"></div>
         </div>
     </section>
-  
- <!--3d image swiper-->
- <section style="background-color: #1e1e21;">
-    <div class="mySwiper">
-    <div class="swiper-wrapper" style="border-top: #fff;">
-      <div class="swiper-slide"> <img src="image/brand 3d/48730448-f4e7-4cc5-a96f-b9914d90a220.png" alt=""></div>
-      <div class="swiper-slide"> <img src="image/brand 3d/conduit_pipes.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="image/brand 3d/Fans_ventilation.png" alt=""> </div>
-      <div class="swiper-slide"><img src="image/brand 3d/Kitchenn.png" alt=""> </div>
-      <div class="swiper-slide"><img src="image/brand 3d/LED_lighting.jpg" alt=""> </div>
-      <div class="swiper-slide"><img src="image/brand 3d/smart_homes.png" alt=""> </div>
-      <div class="swiper-slide"> <img src="image/brand 3d/solar.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="image/brand 3d/Switchgear&protection.jpg" alt=""> </div>
-      <div class="swiper-slide"><img src="image/brand 3d/water heater final.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="image/brand 3d/Wires & Cables.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="image/brand 3d/Wiring_device (2).png" alt=""></div>
-      <div class="swiper-slide"><img src="image/brand 3d/water heater final.jpg" alt=""></div>
+
+    <!--3d image swiper-->
+    <section style="background-color: #1e1e21;">
+        <div class="mySwiper">
+            <div class="swiper-wrapper" style="border-top: #fff;">
+                <div class="swiper-slide"> <img src="image/brand 3d/48730448-f4e7-4cc5-a96f-b9914d90a220.png" alt="">
+                </div>
+                <div class="swiper-slide"> <img src="image/brand 3d/conduit_pipes.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/brand 3d/Fans_ventilation.png" alt=""> </div>
+                <div class="swiper-slide"><img src="image/brand 3d/Kitchenn.png" alt=""> </div>
+                <div class="swiper-slide"><img src="image/brand 3d/LED_lighting.jpg" alt=""> </div>
+                <div class="swiper-slide"><img src="image/brand 3d/smart_homes.png" alt=""> </div>
+                <div class="swiper-slide"> <img src="image/brand 3d/solar.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/brand 3d/Switchgear&protection.jpg" alt=""> </div>
+                <div class="swiper-slide"><img src="image/brand 3d/water heater final.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/brand 3d/Wires & Cables.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="image/brand 3d/Wiring_device (2).png" alt=""></div>
+                <div class="swiper-slide"><img src="image/brand 3d/water heater final.jpg" alt=""></div>
+            </div>
+
+        </div>
+    </section>
+    <!--3d image scrool-->
+
+    <div id="main">
+        <div class="text" style="font-size: 200px;">
+            <div class="text-img"></div>
+            <h1>Stay InspiredWith <br>What’s In</h1>
+            <p>It’s Anchor by Panasonic. Where simplicity meets sophistication.</p>
+        </div>
+        <div class="cards" id="card-one"></div>
+        <div class="cards" id="card-two"></div>
+        <div class="cards" id="card-three"></div>
     </div>
-  
-  </div>
-</section>
- <!--3d image scrool-->
 
-  <div id="main">
-    <div class="text" style="font-size: 200px;">
-        <div class="text-img" ></div>
-        <h1>Stay InspiredWith <br>What’s In</h1>
-        <p>It’s Anchor by Panasonic. Where simplicity meets sophistication.</p>
-    </div>
-    <div class="cards" id="card-one"></div>
-    <div class="cards" id="card-two"></div>
-    <div class="cards" id="card-three"></div>
-</div>
-
-<!-- benchmark numbers-->
-<div class="metrics-container">
-    <div class="metrics-content">
-        <h1 class="metrics-title">Setting Benchmarks and Raising the Bar For Excellence</h1>
-        <p class="metrics-subtitle">
-            Our connected solutions embody the fusion of innovation, style and expertise, ensuring 
-            safety, convenience, and energy efficiency for homes and businesses alike.
-        </p>
-        <div class="metrics-stats">
-            <div class="metrics-stat-item">
-                <span class="metrics-stat-number">60</span>
-                <span class="metrics-stat-description">Years of Legacy</span>
+    <!-- benchmark numbers-->
+    <div class="metrics-container">
+        <div class="metrics-content">
+            <h1 class="metrics-title">Setting Benchmarks and Raising the Bar For Excellence</h1>
+            <p class="metrics-subtitle">
+                Our connected solutions embody the fusion of innovation, style and expertise, ensuring
+                safety, convenience, and energy efficiency for homes and businesses alike.
+            </p>
+            <div class="metrics-stats">
+                <div class="metrics-stat-item">
+                    <span class="metrics-stat-number">60</span>
+                    <span class="metrics-stat-description">Years of Legacy</span>
+                </div>
+                <div class="metrics-stat-item">
+                    <span class="metrics-stat-number">500+</span>
+                    <span class="metrics-stat-description">Organisation Strength</span>
+                </div>
+                <div class="metrics-stat-item">
+                    <span class="metrics-stat-number">30</span>
+                    <span class="metrics-stat-description">Sales Offices</span>
+                </div>
+                <div class="metrics-stat-item">
+                    <span class="metrics-stat-number">7</span>
+                    <span class="metrics-stat-description">Factories</span>
+                </div>
             </div>
-            <div class="metrics-stat-item">
-                <span class="metrics-stat-number">500+</span>
-                <span class="metrics-stat-description">Organisation Strength</span>
-            </div>
-            <div class="metrics-stat-item">
-                <span class="metrics-stat-number">30</span>
-                <span class="metrics-stat-description">Sales Offices</span>
-            </div>
-            <div class="metrics-stat-item">
-                <span class="metrics-stat-number">7</span>
-                <span class="metrics-stat-description">Factories</span>
-            </div>
-        </div>
-        <a href="#" class="metrics-link">More About Panasonic</a>
-    </div>
-</div>
-<!--footer -->
-
-<div style="overflow-x: hidden;">
-<footer id="footer" class="footer-wrapper">
-    <div class="footer-container" >
-        <div class="footer-column">
-            <h3 class="footer-title">Find Us</h3>
-            <p class="footer-text">Manufacturing and Head Office</p>
-            <p class="footer-text">126-128 Freight Drive</p>
-            <p class="footer-text">Somerton VIC 3062</p>
-            <p class="footer-text">(Not open to the public)</p>
-            <p class="footer-text">Somerton VIC 3062, Australia</p>
-            <p class="footer-text"><a href="#" class="footer-link">View Map &rarr;</a></p>
-            <p class="footer-text"><a href="mailto:info@sussextaps.com.au" class="footer-link">info@sussextaps.com.au</a></p>
-            <p class="footer-text">(03) 9308 6599</p>
-        </div>
-
-        <div class="footer-column">
-            <h3 class="footer-title">Customer Care</h3>
-            <p><a href="#" class="footer-link">Contact</a></p>
-            <p><a href="#" class="footer-link">Warranty</a></p>
-            <p><a href="#" class="footer-link">Care & Maintenance</a></p>
-            <p><a href="#" class="footer-link">Order our Finishes</a></p>
-            <p><a href="#" class="footer-link">FAQ's</a></p>
-        </div>
-
-        <div class="footer-column">
-            <h3 class="footer-title">Inside Sussex</h3>
-            <p><a href="#" class="footer-link">Our Purpose</a></p>
-            <p><a href="#" class="footer-link">Taking Responsibility</a></p>
-            <p><a href="#" class="footer-link">Art of Manufacturing</a></p>
-            <p><a href="#" class="footer-link">Heritage and People</a></p>
-            <p><a href="#" class="footer-link">CPD Presentation</a></p>
-        </div>
-
-        <div class="footer-column">
-            <h3 class="footer-title">Be part of OXFORD Electronics</h3>
-            <p class="footer-text">Keep up to date with exclusive projects, collection releases, and our commitment to sustainability</p>
-            <form class="footer-form">
-                <input type="text" placeholder="Your Name" class="footer-input">
-                <input type="email" placeholder="Email Address" class="footer-input">
-                <select class="footer-select">
-                    <option value="">I am a</option>
-                    <option value="Architect">Reseller</option>
-                    <option value="Designer">Wholeseller</option>
-                    <option value="Other">Other</option>
-                </select>
-                <button type="submit" class="footer-button">Subscribe &rarr;</button>
-            </form>
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            <a href="#" class="metrics-link">More About Panasonic</a>
         </div>
     </div>
-</div>
+
+    <section id="clients" class="testimonials-section">
+        <div class="heading-container">
+            <h2 class="heading">What People are saying about us</h2>
+            <div class="paragraph-container">
+                <p class="paragraph">Everything you need to accept card payments and grow your business anywhere on the
+                    planet.</p>
+            </div>
+        </div>
+
+        <div id="feedback-container" class="feedback-container">
+            <!-- Cards yaha render hoge -->
+        </div>
+    </section>
+
+    <!--footer -->
+
+    <div style="overflow-x: hidden;">
+        <footer id="footer" class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3 class="footer-title">Find Us</h3>
+                    <p class="footer-text">Manufacturing and Head Office</p>
+                    <p class="footer-text">126-128 Freight Drive</p>
+                    <p class="footer-text">Somerton VIC 3062</p>
+                    <p class="footer-text">(Not open to the public)</p>
+                    <p class="footer-text">Somerton VIC 3062, Australia</p>
+                    <p class="footer-text"><a href="#" class="footer-link">View Map &rarr;</a></p>
+                    <p class="footer-text"><a href="mailto:info@sussextaps.com.au"
+                            class="footer-link">info@sussextaps.com.au</a></p>
+                    <p class="footer-text">(03) 9308 6599</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Customer Care</h3>
+                    <p><a href="#" class="footer-link">Contact</a></p>
+                    <p><a href="#" class="footer-link">Warranty</a></p>
+                    <p><a href="#" class="footer-link">Care & Maintenance</a></p>
+                    <p><a href="#" class="footer-link">Order our Finishes</a></p>
+                    <p><a href="#" class="footer-link">FAQ's</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Inside Sussex</h3>
+                    <p><a href="#" class="footer-link">Our Purpose</a></p>
+                    <p><a href="#" class="footer-link">Taking Responsibility</a></p>
+                    <p><a href="#" class="footer-link">Art of Manufacturing</a></p>
+                    <p><a href="#" class="footer-link">Heritage and People</a></p>
+                    <p><a href="#" class="footer-link">CPD Presentation</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Be part of OXFORD Electronics</h3>
+                    <p class="footer-text">Keep up to date with exclusive projects, collection releases, and our
+                        commitment to sustainability</p>
+                    <form class="footer-form">
+                        <input type="text" placeholder="Your Name" class="footer-input">
+                        <input type="email" placeholder="Email Address" class="footer-input">
+                        <select class="footer-select">
+                            <option value="">I am a</option>
+                            <option value="Architect">Reseller</option>
+                            <option value="Designer">Wholeseller</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <button type="submit" class="footer-button">Subscribe &rarr;</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    </div>
 
     <div class="certification-wrapper">
         <div class="certification-item">
@@ -318,21 +374,21 @@
         </div>
     </div>
 
-    
-</footer>
 
-<!--footer -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
-    integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </footer>
+
+    <!--footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-    <script >
+    <script>
 
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
@@ -347,24 +403,27 @@
             },
             speed: 600,
             coverflowEffect: {
-              rotate: 50,
-              stretch: -20,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
+                rotate: 50,
+                stretch: -20,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
             },
             pagination: {
-              el: ".swiper-pagination",
-              clickable: true, 
-              dynamicBullets: true
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             }
-          });
-            </script>
+        });
 
-  
+
+    </script>
+
+
 </body>
+
 </html>
